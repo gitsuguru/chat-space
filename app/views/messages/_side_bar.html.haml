@@ -1,0 +1,12 @@
+.side
+  .side__user
+    .side__box
+      .side__name masa
+      .side__icon
+        = link_to "#", class: "side__button button-interval" do
+          = icon("far", "edit")
+        = link_to "#", class: "side__button" do
+          = icon("fas", "cog")
+  .side__bar
+    = render partial: "side_bar_render"
+    = render partial: "side_bar_render"
