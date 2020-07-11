@@ -1,0 +1,27 @@
+.main 
+  .main__group
+    .main__upper
+      .main__group-list test 
+      .main__group-member member:masa
+    .main__edit
+      = link_to "#", class: "main__push" do
+        Edit 
+  .main__chat
+    .main__text
+      .main__name masa 
+      .main__date   2019/11/20(Wed) 17:43:01
+    .main__display
+      .main__word おはよう！
+    .main__text
+      .main__name masa 
+      .main__date 2019/11/20(Wed) 17:43:34
+    .main__display
+      .main__word 今日は夜から雨
+  .main__message
+    %form.main__form
+      %input.main__send{type: "text", placeholder: "type a message"}
+      %label.main__image
+        = icon("fas", "image")
+        %input{type: "file"}
+    %form
+      %input.main__submit{type: "submit", value: "Send"}

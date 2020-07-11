@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+}
+
+.side {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+  &__user {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__box {
+    width: 260px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__name {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  &__icon {
+    width: 60px;
+    text-align: right;
+  }
+  &__button {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &__bar {
+    background-color: #2f3e51;
+    width: 300px;
+    height: calc(100vh - 100px);
+  }
+  &__frame {
+    color: #ffffff;
+    width: 300px;;
+    padding-top: 20px;
+  }
+  &__group {
+    font-size: 15px;
+    margin: 0px 20px 5px 20px;
+  }
+  &__message {
+    font-size: 11px;
+    margin: 0px 20px 40px 20px;
+  }
+}
+
+.button-interval {
+  margin: 0 5px 0 0;
+}
