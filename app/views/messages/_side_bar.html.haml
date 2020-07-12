@@ -4,10 +4,15 @@
       %h3.side__name 
         = current_user.name
       .side__icon
-        = link_to "#", class: "side__button button-interval" do
+        = link_to new_group_path, class: "side__button button-interval" do
           = icon("far", "edit")
         = link_to edit_user_path(current_user), class: "side__button" do
           = icon("fas", "cog")
   .side__bar
-    = render partial: "side_bar_render"
-    = render partial: "side_bar_render"
+    - current_user.groups.each do |group|
+      .side__frame
+        = link_to '#' do
+          .side__group 
+            = group.name
+          .side__message 
+            メッセージはまだありません
