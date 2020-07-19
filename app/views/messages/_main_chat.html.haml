@@ -10,7 +10,7 @@
     .main__edit
       = link_to edit_group_path(@group), class: "main__push" do
         Edit 
-  .main__chat
+  .main__frame
     = render @messages
   .main__message
     = form_with model: [@group, @message], class: "main__form", local: true do |f|

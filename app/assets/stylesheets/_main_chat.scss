@@ -29,12 +29,13 @@
     border: 1px solid #38aef0;
     text-decoration: none;
   }
-  &__chat {
-    background-color: #fafafa;
+  &__frame {
     width: calc(100vw - 300px);
     height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
     border-top:solid #eeeeee;
     padding: 35px 0 0 40px;
+    overflow: scroll;
   }
   &__text {
     display: flex;
@@ -46,8 +47,8 @@
     margin-right: 10px;
   }
   &__date {
-    color: #999999;
     font-size: 12px;
+    color: #999999
   }
   &__display {
     margin-bottom: 46px;
